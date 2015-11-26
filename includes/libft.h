@@ -6,7 +6,7 @@
 /*   By: jealonso <jealonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 17:14:13 by jealonso          #+#    #+#             */
-/*   Updated: 2015/11/17 13:54:21 by jealonso         ###   ########.fr       */
+/*   Updated: 2015/11/26 15:55:23 by jealonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ typedef struct		s_read
 
 int		get_next_line(int const fd, char **line);
 void	ft_bzero(void *s, size_t n);
+t_list	*ft_create_elem(char *data);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -48,7 +49,7 @@ int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isupper(int c);
 char	*ft_itoa(int n);
-int		ft_listadd(t_list **begin, t_list *current);
+t_list  *ft_list_push_back(t_list *list, t_list *new);
 void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *s1, const void *s2, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
