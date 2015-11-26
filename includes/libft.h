@@ -6,7 +6,7 @@
 /*   By: jealonso <jealonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 17:14:13 by jealonso          #+#    #+#             */
-/*   Updated: 2015/11/26 16:13:49 by jealonso         ###   ########.fr       */
+/*   Updated: 2015/11/26 17:45:49 by jealonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct		s_read
 	struct s_read	*next;
 }					t_read;
 
+int		ft_atoi(char *str);
 int		get_next_line(int const fd, char **line);
 void	ft_bzero(void *s, size_t n);
 t_list	*ft_create_elem(char *data);
