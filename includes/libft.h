@@ -6,7 +6,7 @@
 /*   By: jealonso <jealonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 17:14:13 by jealonso          #+#    #+#             */
-/*   Updated: 2015/11/26 17:45:49 by jealonso         ###   ########.fr       */
+/*   Updated: 2015/11/28 17:54:08 by jealonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ int		ft_putchar_fd(char c, int fd);
 void	ft_putchar_l(char c);
 void	ft_putendl(char const *s);
 void	ft_putendl_fd(char const *s, int fd);
+void	ft_putlist(t_list *list);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr(char const *s);

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_putlist.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jealonso <jealonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 20:03:23 by jealonso          #+#    #+#             */
-/*   Updated: 2015/11/28 17:56:18 by jealonso         ###   ########.fr       */
+/*   Created: 2015/11/28 17:51:39 by jealonso          #+#    #+#             */
+/*   Updated: 2015/11/28 17:53:16 by jealonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
-{
-	int a;
+# include "libft.h"
 
-	a = 0;
-	while (dest[a] != '\0')
-		a++;
-	while (*src)
-	{
-		dest[a] = *src;
-		a++;
-		++src;
-	}
-	dest[a] = '\0';
-	return (dest);
+void	ft_putlist(t_list *list)
+{
+	if (list)
+		while (list)
+		{
+			ft_putendl(list->data);
+			list = list->next;
+		}
 }
