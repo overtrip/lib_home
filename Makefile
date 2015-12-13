@@ -6,7 +6,7 @@
 #    By: jealonso <jealonso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/09 16:51:42 by jealonso          #+#    #+#              #
-#    Updated: 2015/12/13 16:27:49 by jealonso         ###   ########.fr        #
+#    Updated: 2015/12/13 16:42:10 by jealonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,6 +88,7 @@ SRCS = \
 	ft_strsub.c \
 	ft_strtrim.c \
 	ft_swap.c \
+	ft_swap_str.c \
 	ft_tolower.c \
 	ft_toupper.c \
 	get_next_line.c
